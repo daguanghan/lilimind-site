@@ -1,0 +1,51 @@
+# Lili
+
+> Lili is an iPhone and iPad app that shows live captions of a lecture or meeting, with English–Chinese translation under each line, and gives AI key points and notes. It is free to download from the App Store in the UK and the US; live captions and on-device translation are free with no time limit, and the AI features are paid by time through in-app purchases (from £1.99 in the UK). Before you use it, tell the people in the room.
+
+## In short
+- Name: Lili. Until the next app update, the App Store lists it as "Lilimind: Live Captions & AI". Website: lilimind.com.
+- Download: https://apps.apple.com/app/id6834942605 (App Store, UK and US; category Productivity, also Education).
+- For: international students following lectures and seminars in English, and people holding meetings in a language that is not their first.
+- Languages: English and Chinese (Mandarin), both directions. Interface in English and Chinese.
+- Devices: iPhone and iPad, iOS 26 or iPadOS 26 or later. No Android, no web or desktop version.
+- Price: free download; captions and on-device translation free; AI time from £1.99 (day pass) to £49.99 a year. Details below.
+
+## What it does
+- Live captions: Apple's on-device speech recognition turns speech into text. Audio is never uploaded. Recording is off unless the user turns it on for a session, and a recording stays on the device.
+- Translation: with AI time, each finished line is translated by AI with the context of the conversation. Without AI time, Apple's on-device translation is used where available.
+- What to say next (meeting mode): the AI reads the recent captions and the user's aim for the meeting and proposes one sentence to say, with a full translation underneath.
+- Rolling summary, questions and notes: a short summary every few minutes, answers to questions about what was said, and notes at the end. In meeting mode, a short follow-up email draft.
+- Two modes: Conversation (meetings, one-to-one talks) and Lecture (classes, seminars, talks).
+- Fairness: before every session the user confirms that the people present know captions are on. A notice card is built in.
+
+## Who it is for
+- International students following lectures and seminars in English.
+- People working in the UK or the US who hold meetings in a language that is not their first.
+- Chinese interface and Chinese translation are available, as well as English.
+
+## Privacy
+- Speech is turned into text on the device; no audio leaves it.
+- For AI features, the text of what is said goes over an encrypted connection to the Lili server and on to Anthropic, which runs the AI model (Claude). The Lili server saves none of that text. Anthropic deletes it within 30 days and does not use it to train models.
+- No account is needed. No advertising, no tracking, data not sold.
+- Cloud AI features are not available in mainland China; captions and on-device translation still work there.
+
+## Prices (UK, App Store; other countries see the local App Store price)
+- Free: unlimited on-device captions and on-device translation; one 30-minute trial of the AI features per device.
+- Day pass £1.99: 3 hours of AI features within 24 hours. Does not renew.
+- Week pass £3.99: 8 hours within 7 days. Does not renew.
+- Term pass £9.99: 60 hours in lecture mode within 16 weeks. Does not renew.
+- Monthly £5.99 a month: 15 hours a month.
+- Annual £49.99 a year: 15 hours a month.
+- When paid time runs out only the AI features stop; captions and on-device translation carry on.
+
+## Requirements
+- iPhone or iPad with iOS 26 or iPadOS 26 or later. No Android version.
+
+## Links
+- [App Store](https://apps.apple.com/app/id6834942605)
+- [Home](https://lilimind.com/)
+- [中文介绍](https://lilimind.com/zh/)
+- [Support and FAQ](https://lilimind.com/support)
+- [Privacy Policy](https://lilimind.com/privacy)
+- [Terms of Use](https://lilimind.com/terms)
+- Contact: support@lilimind.com

@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lili：听课、开会时的中英实时字幕与翻译</title>
+<meta name="description" content="Lili 在听课和开会时显示实时字幕，并在英文和中文之间翻译。字幕和本机翻译免费，另有 AI 要点和笔记。">
+<meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0B0F17" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://lilimind.com/zh/">
+<link rel="alternate" hreflang="en" href="https://lilimind.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://lilimind.com/zh/">
+<link rel="alternate" hreflang="x-default" href="https://lilimind.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lili：听课、开会时的中英实时字幕与翻译">
+<meta property="og:description" content="听课和开会时显示实时字幕，并在英文和中文之间翻译。字幕和本机翻译免费，另有 AI 要点和笔记。">
+<meta property="og:url" content="https://lilimind.com/zh/">
+<meta property="og:locale" content="zh_CN">
+<meta name="apple-itunes-app" content="app-id=6834942605">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://lilimind.com/#app",
+   "name": "Lili",
+   "alternateName": [
+    "Lilimind: Live Captions & AI",
+    "Lili live captions"
+   ],
+   "url": "https://lilimind.com/",
+   "downloadUrl": "https://apps.apple.com/app/id6834942605",
+   "installUrl": "https://apps.apple.com/app/id6834942605",
+   "operatingSystem": "iOS 26 or later, iPadOS 26 or later",
+   "availableOnDevice": "iPhone, iPad",
+   "applicationCategory": "ProductivityApplication",
+   "applicationSubCategory": "Education",
+   "countriesSupported": "GB, US",
+   "inLanguage": [
+    "en",
+    "zh-Hans"
+   ],
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/id6834942605",
+    "description": "Free download. Live captions and on-device translation are free with no time limit. AI features are paid by time with in-app purchases: day pass £1.99, week pass £3.99, term pass £9.99, monthly £5.99, annual £49.99 (UK prices)."
+   },
+   "sameAs": [
+    "https://apps.apple.com/app/id6834942605",
+    "https://www.youtube.com/@lilimindapp",
+    "https://www.instagram.com/lilimindapp/"
+   ],
+   "description": "Lili 在 iPhone 和 iPad 上为听课、开会显示实时字幕，每行下面有中英互译，并给出 AI 要点和笔记。可在英国、美国 App Store 免费下载。",
+   "featureList": [
+    "iPhone、iPad 上听课、开会的实时字幕",
+    "每行字幕下显示中英互译",
+    "AI 要点、针对刚才内容的提问、笔记",
+    "会议模式：下一句提示和跟进邮件草稿",
+    "语音转文字在设备上完成，不上传音频",
+    "内置中英文告知卡，用之前告知在场的人"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://lilimind.com/#website",
+   "name": "Lilimind",
+   "url": "https://lilimind.com/",
+   "inLanguage": [
+    "en-GB",
+    "zh-Hans"
+   ],
+   "about": {
+    "@id": "https://lilimind.com/#app"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://lilimind.com/zh/#faq",
+   "inLanguage": "zh-Hans",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "支持哪些设备？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iPhone 和 iPad，需要 iOS 26 或 iPadOS 26 及以上。没有安卓版。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "支持哪些语言？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "英文和中文（普通话），两个方向都可以。这个版本没有其他语言。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "哪些免费，哪些收费？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免费、不限时：实时字幕和本机翻译。每台设备另有一次 30 分钟的 AI 功能试用。 按时长收费：AI 翻译、要点、针对刚才内容的提问、笔记；会议模式另有下一句提示和跟进邮件草稿。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "时长用完了会怎样？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "只有 AI 功能停止。正在进行的场次继续，字幕和本机翻译照常使用。通行证不会自动续费，不再购买就不会再扣款。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "用的时候要告诉别人吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "要。每次开始前，App 都会请你确认已经告知在场的人，并提供一张中英文告知卡。有些学校和单位对字幕、转写类工具有自己的规定，请先了解。美国有些州（包括加州）要求在场所有人都同意后才能录音或转写私人谈话，所以请先问过每个人；打开录音前更要先征得同意。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "线上会议能用吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "它转写的是设备麦克风听得到的声音，不会作为参会者加入线上会议。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- OG IMAGE SLOT: add <meta property="og:image" content="https://lilimind.com/assets/og.png"> once the image exists in assets/ -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314284B'/%3E%3Crect x='7' y='12' width='18' height='3.5' rx='1.5' fill='%23F5F1E6'/%3E%3Crect x='7' y='18.5' width='12' height='3.5' rx='1.5' fill='%23C9A961'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>Lili</a>
+    <nav aria-label="主导航">
+      <ul class="nav">
+        <li><a href="#how">怎么用</a></li>
+        <li><a href="#prices">价格</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="../support.html" hreflang="en">帮助</a></li>
+        <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>听课、开会时，在手机上看中英实时字幕和翻译。</h1>
+      <!-- APP STORE BADGE SLOT: replace the text of this link with Apple's official badge image (Chinese version). Keep the href. -->
+      <p><a class="store-btn" href="https://apps.apple.com/app/id6834942605">在 App Store 下载</a></p>
+      <p class="hero-facts">字幕和本机翻译免费，不限时长。支持 iPhone 和 iPad，需要 iOS 26 或更高版本。在英国和美国的 App Store 上架。</p>
+      <p class="notice-line">在英国、美国学习或工作，Apple 账户还是其他地区的？<a href="#apple-id">看这里</a></p>
+    </div>
+
+    <!-- SCREENSHOT 1: lecture mode, captions with translation (Chinese interface). Replace this whole <figure> with the real capture. -->
+    <figure class="phone" role="img" aria-label="字幕界面示意图：英文课堂字幕，每句下面是中文翻译，顶部有「正在收听」标识。">
+      <div class="phone-screen">
+        <div class="phone-bar"><span class="listening">正在收听</span><span>听课</span></div>
+        <p class="cap dim" lang="en">Today we look at how cities manage water during heavy rain.</p>
+        <p class="tr dim">今天我们来看城市在暴雨时怎样管理雨水。</p>
+        <p class="cap dim" lang="en">There are three ideas to remember.</p>
+        <p class="tr dim">有三点需要记住。</p>
+        <p class="cap" lang="en">First, slow the water down.</p>
+        <p class="tr">第一，让水流慢下来。</p>
+        <p class="cap" lang="en">Second, store it for a short time.</p>
+        <p class="tr">第二，把水暂时存起来。</p>
+      </div>
+    </figure>
+  </div>
+</div>
+
+<section id="about" aria-labelledby="about-h">
+  <div class="wrap narrow">
+    <h2 id="about-h">一句话介绍 Lili</h2>
+    <p>Lili 是一款 iPhone 和 iPad App：听课、开会时显示实时字幕，每行下面有中英互译，并给出 AI 要点和笔记。适合在英语课堂上听课的留学生，以及用非母语开会的人。免费下载：实时字幕和本机翻译免费、不限时长；AI 功能按时长内购，£1.99 起（英国价格）。在英国和美国的 <a href="https://apps.apple.com/app/id6834942605">App Store</a> 下载。<!-- STORE-NAME-NOTE: delete the next sentence once version 1.1 renames the listing to Lili -->下次更新之前，App Store 上的名称是「Lilimind: Live Captions &amp; AI」。用之前请先告知在场的人。</p>
+  </div>
+</section>
+
+<section id="what" aria-labelledby="what-h">
+  <div class="wrap">
+    <h2 id="what-h">能做什么</h2>
+    <div class="grid three">
+      <div class="card">
+        <h3>边听边看</h3>
+        <p>对方说的话变成字幕，每句下面是翻译。这部分免费，不限时长。</p>
+      </div>
+      <div class="card">
+        <h3>走神了，看一眼要点就跟上</h3>
+        <p>要点随着内容一条条更新。也可以就刚才讲的内容打字提问，得到简短回答。</p>
+      </div>
+      <div class="card">
+        <h3>结束就有一份笔记</h3>
+        <p>标题、要点、数字和日期、待办、没讲清的问题。会议模式还会提示下一句可以怎么说，并起草一封会后跟进邮件。</p>
+      </div>
+    </div>
+
+    <div class="phones">
+      <div>
+        <!-- SCREENSHOT 2: lecture mode with the key-points panel open (Chinese interface). -->
+        <figure class="phone" role="img" aria-label="要点面板示意图：一个主题、三条要点和一个日期，标有「AI 生成，请核对」。">
+          <div class="phone-screen">
+            <div class="phone-bar"><span class="listening">正在收听</span><span>听课</span></div>
+            <p class="cap dim" lang="en">Third, release it safely.</p>
+            <p class="tr dim">第三，安全地把水排走。</p>
+            <div class="panel">
+              <p class="panel-title">要点</p>
+              <p>暴雨时的城市雨水管理</p>
+              <ul>
+                <li>让水流慢下来</li>
+                <li>把水暂时存起来</li>
+                <li>安全地排走</li>
+              </ul>
+              <p>课程作业 3 月 14 日截止，占本课成绩 30%</p>
+              <p class="ai-label">AI 生成，请核对</p>
+            </div>
+          </div>
+        </figure>
+        <p class="phone-caption">上课时的要点</p>
+      </div>
+      <div>
+        <!-- SCREENSHOT 3: notes screen after a session ends (Chinese interface). -->
+        <figure class="phone" role="img" aria-label="笔记界面示意图：标题、一句话概括、待办和一个没讲清的问题，标有「AI 生成，请核对」。">
+          <div class="phone-screen">
+            <div class="phone-bar"><span>笔记</span><span>48 分钟</span></div>
+            <p class="cap"><strong>暴雨时的城市雨水管理</strong></p>
+            <p class="cap dim">城市应对暴雨的三个办法：减速、暂存、排放。</p>
+            <div class="panel">
+              <p class="panel-title">待办</p>
+              <ul>
+                <li>课程作业 3 月 14 日截止（占 30%）</li>
+                <li>下周现场参观，穿合适的鞋</li>
+              </ul>
+              <p class="panel-title">没讲清的问题</p>
+              <p>参观的是哪个场地？</p>
+              <p class="ai-label">AI 生成，请核对</p>
+            </div>
+          </div>
+        </figure>
+        <p class="phone-caption">下课后的笔记</p>
+      </div>
+      <div>
+        <!-- SCREENSHOT 4: meeting mode with the what-to-say card (Chinese interface). -->
+        <figure class="phone" role="img" aria-label="会议模式示意图：一句字幕和翻译，以及一张提示下一句怎么说的卡片，标有「AI 生成，请核对」。">
+          <div class="phone-screen">
+            <div class="phone-bar"><span class="listening">正在收听</span><span>会议</span></div>
+            <p class="cap" lang="en">Could you confirm when the drawings will be ready?</p>
+            <p class="tr">你能确认图纸什么时候能准备好吗？</p>
+            <div class="panel">
+              <p class="panel-title">可以这样说</p>
+              <p lang="en">Let me check with the team and confirm the date by Friday.</p>
+              <p class="muted">我和团队核实一下，周五前确认日期。</p>
+              <p class="ai-label">AI 生成，请核对</p>
+            </div>
+          </div>
+        </figure>
+        <p class="phone-caption">会议模式：提示下一句怎么说</p>
+      </div>
+    </div>
+    <p class="small muted">以上是示意图，内容为虚构。</p>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <h2 id="how-h">怎么用</h2>
+    <ol class="steps grid three">
+      <li>
+        <h3>先告诉在场的人</h3>
+        <p>每次开始前，App 会请你确认已经告知。点一下可以打开一张中英文告知卡，给对方看。</p>
+      </li>
+      <li>
+        <h3>把手机放在听得清的位置，点「开始」</h3>
+        <p>选择听课或会议模式。麦克风开启期间，屏幕上始终有「正在收听」的标识。</p>
+      </li>
+      <li>
+        <h3>边听边看，结束后留下笔记</h3>
+        <p>字幕和翻译随着讲话出现。笔记保存在你的设备上，随时可以删除。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+  <div class="wrap narrow">
+    <h2 id="privacy-h">说的话去了哪里</h2>
+    <!-- SCREENSHOT 5 slot: the bilingual notice card can be shown here once captured. -->
+    <ul class="ticks">
+      <li>语音转文字在你的设备上完成。不保存、不上传音频。</li>
+      <li>文字记录和笔记只保存在你的设备上，可以删除其中一条，也可以全部删除。</li>
+      <li>使用 AI 功能时，发送到我们服务器的是文字，不是声音；服务器把文字转给 AI 模型服务商处理，再把结果传回来。服务器不保存这些文字，这些文字也不用于训练模型。</li>
+      <li>不需要注册或登录。没有广告，也没有其他公司的统计分析软件。</li>
+      <li>App 不识别说话人，不做声纹，不做人脸识别。</li>
+      <li>有些学校和单位对字幕、转写类工具有自己的规定，请先了解并遵守。</li>
+    </ul>
+    <p><a href="../privacy.html" hreflang="en">阅读隐私政策（英文）</a></p>
+  </div>
+</section>
+
+<section id="prices" aria-labelledby="prices-h">
+  <div class="wrap">
+    <h2 id="prices-h">价格</h2>
+    <p class="lead">字幕和本机翻译免费。只有 AI 功能按时长收费：AI 翻译、要点、提问、笔记，以及会议模式里的下一句提示和跟进邮件草稿。</p>
+    <!-- SCREENSHOT 6 slot: the plans screen can be shown here once captured. -->
+    <div class="table-wrap" role="region" aria-labelledby="prices-h" tabindex="0">
+      <table role="table">
+        <caption>英国区价格。其他国家以 App Store 显示的当地价格为准。</caption>
+        <thead role="rowgroup">
+          <tr role="row"><th scope="col" role="columnheader">方案</th><th scope="col" role="columnheader">价格</th><th scope="col" role="columnheader">内容</th></tr>
+        </thead>
+        <tbody role="rowgroup">
+          <tr role="row"><th scope="row" role="rowheader">免费</th><td class="price" role="cell">£0</td><td role="cell">实时字幕和本机翻译，不限时长。每台设备另有一次 30 分钟的 AI 功能试用。</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">日通行证</th><td class="price" role="cell">£1.99</td><td role="cell">24 小时内可用 3 小时 AI 功能，两种模式都能用。不续费。</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">周通行证</th><td class="price" role="cell">£3.99</td><td role="cell">7 天内可用 8 小时。不续费。</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">学期通行证（听课）</th><td class="price" role="cell">£9.99</td><td role="cell">16 周内可用 60 小时，仅限听课模式。不续费。</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">月度订阅</th><td class="price" role="cell">每月 £5.99</td><td role="cell">每月 15 小时。每月自动续费，直到取消。</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">年度订阅</th><td class="price" role="cell">每年 £49.99</td><td role="cell">每月 15 小时。每年自动续费，直到取消。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="small muted">
+      <li>时长用完后，只有 AI 功能停止。正在进行的场次不会被打断，字幕和本机翻译照常使用。</li>
+      <li>未用完的时长不结转。</li>
+      <li>购买在 App 内通过你的 Apple 账户完成。订阅可以随时在 App Store 账户设置里取消，见<a href="../support.html#cancel" hreflang="en">如何取消（英文）</a>。</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-h">
+  <div class="wrap narrow">
+    <h2 id="faq-h">常见问题</h2>
+
+    <details id="apple-id">
+      <summary>在 App Store 搜不到 Lili，怎么办？</summary>
+      <div class="answer">
+        <p>Lili 只在英国和美国的 App Store 上架。如果你在英国或美国学习、工作，但 Apple 账户还是中国大陆区或其他地区的，搜索时不会出现这个 App。</p>
+        <p>可以另建一个英国或美国的 Apple 账户，只用于 App Store。iCloud、照片、信息仍然留在你原来的账户里。</p>
+        <ol>
+          <li>用另一个邮箱，在苹果官网（account.apple.com）新建一个 Apple 账户，国家或地区选你现在住的地方。</li>
+          <li>在 iPhone 上打开「设置」，点自己的名字，点「媒体与购买项目」，再点「退出登录」。这一步只退出商店，不退出 iCloud。</li>
+          <li>再点一次「媒体与购买项目」，选择「不是 [你的姓名]？」，登录新账户。</li>
+          <li>在 App Store 搜索 Lili 并下载。免费字幕马上可以用。</li>
+          <li>需要更新原来账户下载的 App 时，用同样的方法切回去。</li>
+        </ol>
+        <p>开始之前请了解：</p>
+        <ul>
+          <li>第一次大约需要十分钟。</li>
+          <li>苹果的说明是：登录的账户和购买内容的账户不同时，那些内容无法更新。所以原来账户下载的 App 要等你切回去才能更新。</li>
+          <li>苹果关于音乐的帮助页面说，与退出的账户关联的购买项目会从设备上移除。如果手机里存着用原来账户下载的音乐或影片，可能需要重新下载。</li>
+          <li>「媒体与购买项目」的操作步骤，苹果写在这个页面开头的检查事项里：<a href="https://support.apple.com/zh-cn/117294">support.apple.com/zh-cn/117294</a>。</li>
+          <li>免费功能不需要付款方式。购买通行证或订阅，需要该国家 App Store 接受的付款方式；中国大陆的支付宝和微信支付不能用。</li>
+          <li>回国期间，在中国大陆境内云端 AI 功能不能用；字幕和本机翻译照常。</li>
+          <li>购买记录跟着购买时的 Apple 账户走。恢复购买或管理订阅时，要登录同一个账户。</li>
+          <li>国家或地区请选你真实居住的地方，并用自己的信息注册。</li>
+        </ul>
+        <p>另一个办法是更改现有账户的国家或地区，苹果的步骤见 <a href="https://support.apple.com/zh-cn/118283">support.apple.com/zh-cn/118283</a>。这会影响余额、订阅和付款方式，请先读完再决定。</p>
+        <p>很多同学为了下载当地的银行和交通 App，已经有一个当地的 Apple 账户，直接用它就可以。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>支持哪些设备？</summary>
+      <div class="answer">
+        <p>iPhone 和 iPad，需要 iOS 26 或 iPadOS 26 及以上。没有安卓版。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>支持哪些语言？</summary>
+      <div class="answer">
+        <p>英文和中文（普通话），两个方向都可以。这个版本没有其他语言。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>哪些免费，哪些收费？</summary>
+      <div class="answer">
+        <p>免费、不限时：实时字幕和本机翻译。每台设备另有一次 30 分钟的 AI 功能试用。</p>
+        <p>按时长收费：AI 翻译、要点、针对刚才内容的提问、笔记；会议模式另有下一句提示和跟进邮件草稿。见<a href="#prices">价格</a>。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>时长用完了会怎样？</summary>
+      <div class="answer">
+        <p>只有 AI 功能停止。正在进行的场次继续，字幕和本机翻译照常使用。通行证不会自动续费，不再购买就不会再扣款。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>会保存音频吗？</summary>
+      <div class="answer">
+        <p>不保存、不上传音频。语音转文字在你的设备上完成，文字记录和笔记保存在你的设备上。</p>
+        <p>开始之前仍然要告诉在场的人，并遵守所在学校或单位的规定。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>用的时候要告诉别人吗？</summary>
+      <div class="answer">
+        <p>要。每次开始前，App 都会请你确认已经告知在场的人，并提供一张中英文告知卡。有些学校和单位对字幕、转写类工具有自己的规定，请先了解。美国有些州（包括加州）要求在场所有人都同意后才能录音或转写私人谈话，所以请先问过每个人；打开录音前更要先征得同意。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>字幕准不准？</summary>
+      <div class="answer">
+        <p>会出错。口音重、环境吵、语速快、专业术语多的时候更容易出错。我们不公布准确率数字。字幕是免费的，最好的办法是在你自己的教室或会议室里试十分钟。</p>
+        <p>AI 功能生成的内容都标有「AI 生成，请核对」。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>能区分是谁在说话吗？</summary>
+      <div class="answer">
+        <p>不能。字幕不区分说话人。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>线上会议能用吗？</summary>
+      <div class="answer">
+        <p>它转写的是设备麦克风听得到的声音，不会作为参会者加入线上会议。</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>谁做的？遇到问题找谁？</summary>
+      <div class="answer">
+        <p>Lili 由一名在英国的独立开发者制作。遇到问题请看<a href="../support.html" hreflang="en">帮助页面（英文）</a>，或写信到 <a href="mailto:support@lilimind.com">support@lilimind.com</a>，中文、英文都可以。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+      <p class="seller">Lili 由 Daguang Han 提供 · 15 Barsby Drive, Loughborough, LE11 5UJ, United Kingdom · support@lilimind.com · +44 7840 816841</p>
+  <div class="wrap">
+    <ul>
+      <li><a href="../privacy.html" hreflang="en">隐私政策（英文）</a></li>
+      <li><a href="../terms.html" hreflang="en">使用条款（英文）</a></li>
+      <li><a href="../support.html" hreflang="en">帮助（英文）</a></li>
+      <li><a href="../support.html#seller" hreflang="en">销售方信息（英文）</a></li>
+      <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
+    </ul>
+    <p>Lili 由一名在英国的独立开发者制作。本网站不使用 Cookie，没有统计分析，也没有脚本。</p>
+    <p lang="en">Apple, iPhone, iPad and App Store are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</p>
+  </div>
+</footer>
+</body>
+</html>
